@@ -33,8 +33,14 @@ public class BusinessImpl implements BusinessInterface {
                     .build();
 
         UserDAO userDAO = mapper.BDataContentToUserDAO(bDataContent);
-        repositoryInterface.save(userDAO);
+        BDataContent bDataContentResponse = mapper.UserDAOToBDataContent(
+                repositoryInterface.save(userDAO)
+        );
 
-        return null;
+        return BDataResponse
+                .builder()
+                .message("Success")
+                .content(bDataContentResponse)
+                .build();
     }
 }

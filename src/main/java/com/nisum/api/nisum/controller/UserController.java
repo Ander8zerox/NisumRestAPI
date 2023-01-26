@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -19,7 +20,7 @@ public class UserController {
     ControllerMapper mapper;
 
     @PostMapping("/userCreation")
-    ResponseEntity<DataResponse> createUser(User user){
+    ResponseEntity<DataResponse> createUser(@RequestBody User user){
 
         DataResponse dataResponse = mapper.BDataResponseToDataResponse(
                 businessInterface

@@ -22,7 +22,7 @@ public class UserDAO {
     private String email;
     @Column(name="password")
     private String password;
-    @OneToMany(mappedBy = "userDAO")
+    @OneToMany(cascade = CascadeType.ALL,mappedBy = "userDAO")
     private List<PhoneDAO> phones;
     @Column(name = "created")
     private String created;

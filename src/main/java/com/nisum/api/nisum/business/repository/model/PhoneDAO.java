@@ -12,9 +12,6 @@ import javax.persistence.*;
 @Entity
 @Table(name="tb_phones")
 public class PhoneDAO {
-    @ManyToOne
-    @JoinColumn(name = "id_user", nullable=false)
-    private UserDAO userDAO;
     @Id
     @Column(name = "number")
     private String number;
@@ -22,4 +19,7 @@ public class PhoneDAO {
     private String cityCode;
     @Column(name = "country_code")
     private String countryCode;
+    @ManyToOne
+    @JoinColumn(name = "id_user")
+    private UserDAO userDAO;
 }
