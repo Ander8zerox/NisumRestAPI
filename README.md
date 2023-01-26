@@ -24,6 +24,13 @@ http://localhost:8080
 
 if the service is running properly the response must be **Nisum API works!** 
 
+## Validations
+
+- Not empty fields are allowed
+- Email field must complain **xxxx@xxxx.xx** format
+- Repeated emails are not allowed
+- Password field must have at least one number
+
 ## Expected Result
 | Request                                        |
 |------------------------------------------------|
