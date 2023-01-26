@@ -2,23 +2,25 @@ package com.nisum.api.nisum.controller.model.request;
 
 import lombok.Getter;
 import lombok.Setter;
-import org.springframework.lang.NonNull;
 
-import javax.validation.constraints.NotEmpty;
+import javax.validation.Valid;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.List;
 
 @Getter
 @Setter
 public class User implements Serializable {
-    @NotEmpty
+
     private String id;
-    @NotEmpty
+    @NotBlank(message = "name may not be blank")
     private String name;
-    @NotEmpty
+    @NotBlank(message = "email may not be blank")
     private String email;
-    @NotEmpty
+    @NotBlank(message = "password may not be blank")
     private String password;
-    @NotEmpty
+    @Valid
+    @NotNull(message = "phones may not be blank")
     private List<Phone> phones;
 }

@@ -12,6 +12,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.validation.Valid;
+
 @RestController
 public class UserController {
     @Autowired
@@ -26,7 +28,7 @@ public class UserController {
     }
 
     @PostMapping("/userCreation")
-    ResponseEntity<DataResponse> createUser(@RequestBody User user){
+    public ResponseEntity<DataResponse> createUser(@Valid @RequestBody User user){
 
         DataResponse dataResponse = mapper.BDataResponseToDataResponse(
                 businessInterface
