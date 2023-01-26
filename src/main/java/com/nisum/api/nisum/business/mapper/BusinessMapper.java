@@ -16,7 +16,6 @@ public interface BusinessMapper {
     @Mapping(source = "modified", target = "modified")
     @Mapping(source = "lastLogin", target = "lastLogin")
     @Mapping(source = "token", target = "token")
-    @Mapping(source = "isActive", target = "isActive")
     UserDAO BDataContentToUserDAO(BDataContent bDataContent);
 
     @Mapping(source = "userId", target = "user.id")
@@ -28,6 +27,5 @@ public interface BusinessMapper {
     @Mapping(source = "modified", target = "modified")
     @Mapping(source = "lastLogin", target = "lastLogin")
     @Mapping(source = "token", target = "token")
-    @Mapping(source = "isActive", target = "isActive")
     BDataContent UserDAOToBDataContent(UserDAO userDAO);
 }

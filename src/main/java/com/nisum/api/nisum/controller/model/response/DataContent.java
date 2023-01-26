@@ -14,5 +14,5 @@ public class DataContent implements Serializable {
     private String modified;
     private String lastLogin;
     private String token;
-    private boolean isActive;
+    private Boolean isActive;
 }

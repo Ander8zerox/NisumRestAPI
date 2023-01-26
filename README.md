@@ -9,6 +9,7 @@ This project will use an H2-embedded database to be tested, the endpoints to use
 - http://localhost:8080
 - http://localhost:8080/userCreation
 - database location: http://localhost:8080/h2-console  user: nisum, password: nisum, jdbc url: jdbc:h2:mem:nisumtestdb
+- Swagger UI: http://localhost:8080/swagger-ui.html#/
 
 ## Running
 

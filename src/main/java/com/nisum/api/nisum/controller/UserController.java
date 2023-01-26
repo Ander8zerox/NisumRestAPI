@@ -27,7 +27,7 @@ public class UserController {
         return "Nisum API works!";
     }
 
-    @PostMapping("/userCreation")
+    @PostMapping(path = "/userCreation",consumes = "application/json", produces = "application/json")
     public ResponseEntity<DataResponse> createUser(@Valid @RequestBody User user){
 
         DataResponse dataResponse = mapper.BDataResponseToDataResponse(
