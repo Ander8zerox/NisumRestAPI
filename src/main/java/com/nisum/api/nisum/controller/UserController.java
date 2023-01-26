@@ -23,7 +23,7 @@ public class UserController {
     ControllerMapper mapper;
 
     @GetMapping("/")
-    public String index() {
+    public String checkHealth() {
         return "Nisum API works!";
     }
 
