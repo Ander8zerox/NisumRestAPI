@@ -7,6 +7,7 @@ import com.nisum.api.nisum.business.model.response.BDataContent;
 import com.nisum.api.nisum.business.model.response.BDataResponse;
 import com.nisum.api.nisum.business.repository.RepositoryInterface;
 import com.nisum.api.nisum.business.repository.model.UserDAO;
+import com.nisum.api.nisum.util.Constants;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -39,7 +40,7 @@ public class BusinessImpl implements BusinessInterface {
 
         return BDataResponse
                 .builder()
-                .message("Success")
+                .message(Constants.SUCCESS)
                 .content(bDataContentResponse)
                 .build();
     }

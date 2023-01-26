@@ -25,6 +25,7 @@ public class User implements Serializable {
     @NotBlank(message = "email may not be blank")
     private String email;
 
+    @Pattern(regexp = Constants.PASSWORD_REGEX, message = "password must contain at least one number")
     @NotBlank(message = "password may not be blank")
     private String password;
 

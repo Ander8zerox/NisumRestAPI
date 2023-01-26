@@ -4,13 +4,15 @@ This project is oriented to register users as a code evaluation for Nisum.
 
 ## Resources
 
-This project will use an H2-embedded database to be tested, the endpoints to use in this test are:
+This project will use an H2-embedded database to be tested, the endpoints to use are:
 
+- http://localhost:8080
 - http://localhost:8080/userCreation
+- database location: http://localhost:8080/h2-console  user: nisum, password: nisum, jdbc url: jdbc:h2:mem:nisumtestdb
 
 ## Running
 
-Just run the following command in  the terminal :
+Clone and open the project with the preferred IDE and once it is open run the following command in  the terminal :
 
 ```sh
 ./gradlew bootRun
