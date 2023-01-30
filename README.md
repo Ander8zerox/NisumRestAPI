@@ -4,7 +4,7 @@ This project is oriented to register users as a code evaluation for Nisum.
 
 ## Resources
 
-This project will use an H2-embedded database to be tested, the endpoints to use are:
+This project uses an H2-embedded database to be tested, the endpoints to use are:
 
 - http://localhost:8080
 - http://localhost:8080/userCreation
