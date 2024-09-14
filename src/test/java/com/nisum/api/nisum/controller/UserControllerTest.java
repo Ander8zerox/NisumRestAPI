@@ -23,7 +23,7 @@ class UserControllerTest {
     private MockMvc mvc;
 
     @Test
-    void shouldCreateUser() throws Exception {
+    void shouldCreateUserWhenCreateIsCalled() throws Exception {
         mvc.perform( MockMvcRequestBuilders
                         .post("/userCreation")
                         .content(DummyMock.asJsonString(DummyMock.getRequest(Constants.REQUEST_COMPLETE_FILE_PATH)))
