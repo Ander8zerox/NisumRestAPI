@@ -32,7 +32,7 @@ public class SwaggerConfig {
                 "nisum evaluation API Description",
                 "1.0",
                 "https://www.nisum.com/es/sobre-nosotros#mission",
-                new Contact("nisum", "https://www.nisum.com/es/contactanos", "contaco@nisum.com"),
+                new Contact("nisum", "https://www.nisum.com/es/contactanos", "contacto@nisum.com"),
                 "LICENSE",
                 "https://www.nisum.com/es/sobre-nosotros",
                 Collections.emptyList()

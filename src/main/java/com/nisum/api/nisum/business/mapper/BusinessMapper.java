@@ -5,6 +5,8 @@ import com.nisum.api.nisum.business.repository.model.UserDAO;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
+import java.util.List;
+
 @Mapper(componentModel = "spring")
 public interface BusinessMapper {
     @Mapping(source = "user.id", target = "userId")
@@ -28,4 +30,6 @@ public interface BusinessMapper {
     @Mapping(source = "lastLogin", target = "lastLogin")
     @Mapping(source = "token", target = "token")
     BDataContent UserDAOToBDataContent(UserDAO userDAO);
+
+    List<BDataContent> UserDAOListToBDataContentList(List<UserDAO> userDAOList);
 }

@@ -6,9 +6,12 @@ import com.nisum.api.nisum.controller.model.request.User;
 import com.nisum.api.nisum.controller.model.response.DataResponse;
 import org.mapstruct.Mapper;
 
+import java.util.List;
+
 @Mapper(componentModel = "spring")
 public interface ControllerMapper {
 
     BUser userToBUser(User user);
     DataResponse BDataResponseToDataResponse(BDataResponse bDataResponse);
+    List<DataResponse> BDataResponseListToDataResponseList(List<BDataResponse> bDataResponse);
 }
