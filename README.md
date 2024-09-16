@@ -165,3 +165,5 @@ if the service is running properly the response must be **Nisum API works!**
     }
 ]
 ```
+## Sequence Diagram
+![](src/main/resources/assets/SequenceDiagram.png)
