@@ -11,7 +11,7 @@ import java.util.List;
 @Setter
 @Entity
 @Table(name="tb_users")
-public class UserDAO {
+public class UserDAO{
 
     @Id
     @Column(name="id_user")
@@ -34,4 +34,5 @@ public class UserDAO {
     private String token;
     @Column(name = "is_active")
     private Boolean isActive;
+
 }

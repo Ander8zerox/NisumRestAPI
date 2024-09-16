@@ -11,4 +11,5 @@ public interface UserRepository extends JpaRepository<UserDAO, String> {
 
     UserDAO save(UserDAO userDAO);
     List<UserDAO> findAll();
+    UserDAO findByEmail(String email);
 }

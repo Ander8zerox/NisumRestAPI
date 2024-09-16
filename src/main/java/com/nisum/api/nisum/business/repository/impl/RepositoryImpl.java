@@ -3,6 +3,7 @@ package com.nisum.api.nisum.business.repository.impl;
 import com.nisum.api.nisum.business.repository.RepositoryInterface;
 import com.nisum.api.nisum.business.repository.dao.UserRepository;
 import com.nisum.api.nisum.business.repository.model.UserDAO;
+import com.nisum.api.nisum.controller.model.request.LogUser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
@@ -23,4 +24,5 @@ public class RepositoryImpl implements RepositoryInterface {
     public List<UserDAO> findAll() {
         return userRepository.findAll();
     }
+
 }
